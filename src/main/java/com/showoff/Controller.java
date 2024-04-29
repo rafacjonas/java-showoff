@@ -10,13 +10,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Controller {
 
-	@GetMapping(path = "/showoff")
+	@GetMapping(path = "/")
 	public String helloWorld() {
-		log.info("It's showtime!");
-		return "It's showtime!";
+		log.info("Hello recruiters!");
+		return "Hello recruiters!";
 	}
 
-	@GetMapping(path = "/showoff-bean")
+	@GetMapping(path = "/json-sample")
 	public ShowoffBean helloWorldBean() {
 		// throw new RuntimeException("Some Error has Happened! Contact Support at
 		// ***-***");
